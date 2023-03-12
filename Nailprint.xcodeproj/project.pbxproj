@@ -7,18 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF440D4329BE212C0014AB06 /* cube.usdz in Resources */ = {isa = PBXBuildFile; fileRef = FF440D4229BE212C0014AB06 /* cube.usdz */; };
+		FF440D4529BE33250014AB06 /* cube.stl in Resources */ = {isa = PBXBuildFile; fileRef = FF440D4429BE29FA0014AB06 /* cube.stl */; };
+		FF57E2F429BDFFA500E63B88 /* TemplateDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF57E2F329BDFFA500E63B88 /* TemplateDetail.swift */; };
+		FF57E2F729BE071D00E63B88 /* TipsAndTricks.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF57E2F629BE071D00E63B88 /* TipsAndTricks.swift */; };
+		FF9CDE5F29BDE89C000ADB20 /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9CDE5E29BDE89C000ADB20 /* TabsView.swift */; };
+		FF9CDE6129BDF0CC000ADB20 /* TemplatesTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9CDE6029BDF0CC000ADB20 /* TemplatesTab.swift */; };
+		FF9CDE6329BDF0D9000ADB20 /* TipsTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9CDE6229BDF0D9000ADB20 /* TipsTab.swift */; };
+		FF9CDE6529BDF538000ADB20 /* Templates.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9CDE6429BDF538000ADB20 /* Templates.swift */; };
 		FFB93A4329BDDD3C002E9397 /* NailprintApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB93A4229BDDD3C002E9397 /* NailprintApp.swift */; };
-		FFB93A4529BDDD3C002E9397 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB93A4429BDDD3C002E9397 /* ContentView.swift */; };
+		FFB93A4529BDDD3C002E9397 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB93A4429BDDD3C002E9397 /* BaseView.swift */; };
 		FFB93A4729BDDD3D002E9397 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFB93A4629BDDD3D002E9397 /* Assets.xcassets */; };
 		FFB93A4A29BDDD3D002E9397 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFB93A4929BDDD3D002E9397 /* Preview Assets.xcassets */; };
+		FFB93A5329BDDE1C002E9397 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB93A5229BDDE1C002E9397 /* Onboarding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FF440D4229BE212C0014AB06 /* cube.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = cube.usdz; sourceTree = "<group>"; };
+		FF440D4429BE29FA0014AB06 /* cube.stl */ = {isa = PBXFileReference; lastKnownFileType = file; path = cube.stl; sourceTree = "<group>"; };
+		FF57E2F329BDFFA500E63B88 /* TemplateDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateDetail.swift; sourceTree = "<group>"; };
+		FF57E2F629BE071D00E63B88 /* TipsAndTricks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsAndTricks.swift; sourceTree = "<group>"; };
+		FF9CDE5E29BDE89C000ADB20 /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
+		FF9CDE6029BDF0CC000ADB20 /* TemplatesTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplatesTab.swift; sourceTree = "<group>"; };
+		FF9CDE6229BDF0D9000ADB20 /* TipsTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsTab.swift; sourceTree = "<group>"; };
+		FF9CDE6429BDF538000ADB20 /* Templates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Templates.swift; sourceTree = "<group>"; };
 		FFB93A3F29BDDD3C002E9397 /* Nailprint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nailprint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFB93A4229BDDD3C002E9397 /* NailprintApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NailprintApp.swift; sourceTree = "<group>"; };
-		FFB93A4429BDDD3C002E9397 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FFB93A4429BDDD3C002E9397 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		FFB93A4629BDDD3D002E9397 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFB93A4929BDDD3D002E9397 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FFB93A5229BDDE1C002E9397 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +50,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF57E2F529BE06F800E63B88 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				FF9CDE6029BDF0CC000ADB20 /* TemplatesTab.swift */,
+				FF9CDE6229BDF0D9000ADB20 /* TipsTab.swift */,
+				FF57E2F329BDFFA500E63B88 /* TemplateDetail.swift */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
 		FFB93A3629BDDD3C002E9397 = {
 			isa = PBXGroup;
 			children = (
@@ -52,8 +80,11 @@
 			isa = PBXGroup;
 			children = (
 				FFB93A4229BDDD3C002E9397 /* NailprintApp.swift */,
-				FFB93A4429BDDD3C002E9397 /* ContentView.swift */,
+				FFB93A5129BDDD79002E9397 /* Model */,
+				FFB93A5029BDDD6A002E9397 /* View */,
 				FFB93A4629BDDD3D002E9397 /* Assets.xcassets */,
+				FF440D4229BE212C0014AB06 /* cube.usdz */,
+				FF440D4429BE29FA0014AB06 /* cube.stl */,
 				FFB93A4829BDDD3D002E9397 /* Preview Content */,
 			);
 			path = Nailprint;
@@ -65,6 +96,26 @@
 				FFB93A4929BDDD3D002E9397 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FFB93A5029BDDD6A002E9397 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FFB93A4429BDDD3C002E9397 /* BaseView.swift */,
+				FFB93A5229BDDE1C002E9397 /* Onboarding.swift */,
+				FF9CDE5E29BDE89C000ADB20 /* TabsView.swift */,
+				FF57E2F529BE06F800E63B88 /* Tabs */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FFB93A5129BDDD79002E9397 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FF9CDE6429BDF538000ADB20 /* Templates.swift */,
+				FF57E2F629BE071D00E63B88 /* TipsAndTricks.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +176,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF440D4529BE33250014AB06 /* cube.stl in Resources */,
+				FF440D4329BE212C0014AB06 /* cube.usdz in Resources */,
 				FFB93A4A29BDDD3D002E9397 /* Preview Assets.xcassets in Resources */,
 				FFB93A4729BDDD3D002E9397 /* Assets.xcassets in Resources */,
 			);
@@ -137,7 +190,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFB93A4529BDDD3C002E9397 /* ContentView.swift in Sources */,
+				FFB93A5329BDDE1C002E9397 /* Onboarding.swift in Sources */,
+				FFB93A4529BDDD3C002E9397 /* BaseView.swift in Sources */,
+				FF9CDE6129BDF0CC000ADB20 /* TemplatesTab.swift in Sources */,
+				FF9CDE6329BDF0D9000ADB20 /* TipsTab.swift in Sources */,
+				FF9CDE6529BDF538000ADB20 /* Templates.swift in Sources */,
+				FF9CDE5F29BDE89C000ADB20 /* TabsView.swift in Sources */,
+				FF57E2F429BDFFA500E63B88 /* TemplateDetail.swift in Sources */,
+				FF57E2F729BE071D00E63B88 /* TipsAndTricks.swift in Sources */,
 				FFB93A4329BDDD3C002E9397 /* NailprintApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,8 +333,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -282,9 +343,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.mesut.Nailprint;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -302,8 +366,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,9 +376,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.mesut.Nailprint;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

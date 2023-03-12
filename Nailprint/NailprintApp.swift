@@ -11,7 +11,7 @@ import SwiftUI
 struct NailprintApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            BaseView()
         }
     }
 }
