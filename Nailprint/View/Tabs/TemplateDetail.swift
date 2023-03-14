@@ -15,25 +15,38 @@ struct TemplateDetail: View {
     @State var getModelPhase = 1
     @State var showExportDialog = false
     @State var showPopupAddAlert = false
+    @State var color = Color(.white)
+    
+    var scene = SCNScene(named: "nail_polisher.stl")
+    var material = SCNMaterial()
+    
+    var cameraNode: SCNNode? {
+        scene?.rootNode.childNode(withName: "camera", recursively: false)
+    }
+    
+//    var cameraNode = SCNNode()
     
     init(id: Int) {
         self.id = id
         self.template = Templates[id]
-    }
-    
-    var scene = SCNScene(named: "cube.usdz")
-    
-    var cameraNode: SCNNode? {
-        scene?.rootNode.childNode(withName: "camera", recursively: false)
+        self.scene = SCNScene(named: self.template!.stlFile)
+        material.diffuse.contents = UIColor(.blue)
+        scene?.rootNode.childNodes[0].geometry?.firstMaterial = material
+//        cameraNode.camera = SCNCamera()
+//        cameraNode.position = SCNVector3(0, 50, 50)
+//        cameraNode.scale = SCNVector3(2,2,2)
+//        scene?.rootNode.addChildNode(cameraNode)
     }
     
     var body: some View {
         
         ScrollView{
             
-            SceneView(scene: scene, pointOfView: cameraNode, options: [.allowsCameraControl, .autoenablesDefaultLighting])
-                .frame(height: 300)
-                .padding(.bottom)
+            SceneView(scene: scene, pointOfView: cameraNode, options: [
+                .allowsCameraControl,
+                .autoenablesDefaultLighting])
+            .frame(height: 300)
+            .padding(.bottom)
             
             HStack{
                 Spacer()
