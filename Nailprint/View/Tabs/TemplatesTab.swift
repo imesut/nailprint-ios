@@ -10,7 +10,7 @@ import SwiftUI
 struct TemplatesTab: View {
     var body: some View {
         VStack(alignment: .leading){
-            Text("Hi, Gamze!")
+            Text("NAILPRINT")
                 .font(.largeTitle)
                 .padding(.top, 48)
                 .padding(.horizontal)
@@ -33,11 +33,8 @@ struct TemplatesTab: View {
                     }
                 }
                 .disabled(!template.active)
-
-                
             }.listStyle(.sidebar)
                 .scrollContentBackground(.hidden)
-        
         }
         .background(Color(.systemGray6))
     }

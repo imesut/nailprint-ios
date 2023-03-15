@@ -72,14 +72,12 @@ struct TemplateDetail: View {
             }.padding(.all)
             
             if (!readyToAdd && template!.customizable){
-                Button {
-                    print("customize")
-                    readyToAdd = true
-                    getModelPhase = 2
+                
+                NavigationLink {
+                    CustomizePage()
                 } label: {
                     Text("Customize the Model").padding(.all)
-                }
-                .buttonStyle(.borderedProminent)
+                }.buttonStyle(.borderedProminent)
                 
                 Text("or")
                 

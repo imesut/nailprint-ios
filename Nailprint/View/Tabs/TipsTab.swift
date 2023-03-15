@@ -105,6 +105,6 @@ func stopReading(){
 struct TipsTab_Previews: PreviewProvider {
     static var previews: some View {
         TipsTab()
-            .previewDevice(PreviewDevice(rawValue: "iPhone 8 Plus"))
+//            .previewDevice(PreviewDevice(rawValue: "iPhone 8 Plus"))
     }
 }

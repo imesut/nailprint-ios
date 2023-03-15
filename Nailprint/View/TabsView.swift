@@ -14,7 +14,8 @@ struct TabsView: View {
     }
     
     var body: some View {
-        NavigationView{
+//        NavigationView is dismisses all following navigationlinks when a subview dismissed
+        NavigationStack{
             TabView {
                 TemplatesTab().tabItem {
                     Label("Templates", systemImage: "squareshape.squareshape.dashed") }.tag(1)
