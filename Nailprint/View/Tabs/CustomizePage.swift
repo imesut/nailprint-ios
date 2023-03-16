@@ -40,9 +40,8 @@ struct CustomizePage: View {
     
     func getCustomizedTemplate(img: UIImage) {
         let data = img.jpegData(compressionQuality: 1)! as NSData
-        let base64 = data.base64EncodedString()
-        
-        if let url = URL(string:  "http://192.168.1.190:3030//configure/nail_polisher") {
+        let base64 = bs64Formatter(bs64: data.base64EncodedString())
+        if let url = URL(string:  "http://192.168.1.190:3030/configure/nail_polisher") {
             
             var request = URLRequest(url: url)
             request.httpMethod = "POST"
