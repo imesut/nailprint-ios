@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF0EDCFA29C3458B007DAC5F /* ServiceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0EDCF929C3458B007DAC5F /* ServiceResponse.swift */; };
+		FF0EDCFE29C398E9007DAC5F /* nailart.stl in Resources */ = {isa = PBXBuildFile; fileRef = FF0EDCFD29C398E8007DAC5F /* nailart.stl */; };
 		FF57E2F429BDFFA500E63B88 /* TemplateDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF57E2F329BDFFA500E63B88 /* TemplateDetail.swift */; };
 		FF57E2F729BE071D00E63B88 /* TipsAndTricks.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF57E2F629BE071D00E63B88 /* TipsAndTricks.swift */; };
 		FF77580F29C0E4BC00B80665 /* nail_polisher.stl in Resources */ = {isa = PBXBuildFile; fileRef = FF77580E29C0E4BB00B80665 /* nail_polisher.stl */; };
-		FF77581329C0F60C00B80665 /* cube.stl in Resources */ = {isa = PBXBuildFile; fileRef = FF77581229C0F60C00B80665 /* cube.stl */; };
 		FF9CDE5F29BDE89C000ADB20 /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9CDE5E29BDE89C000ADB20 /* TabsView.swift */; };
 		FF9CDE6129BDF0CC000ADB20 /* TemplatesTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9CDE6029BDF0CC000ADB20 /* TemplatesTab.swift */; };
 		FF9CDE6329BDF0D9000ADB20 /* TipsTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9CDE6229BDF0D9000ADB20 /* TipsTab.swift */; };
@@ -26,10 +27,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FF0EDCF929C3458B007DAC5F /* ServiceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceResponse.swift; sourceTree = "<group>"; };
+		FF0EDCFD29C398E8007DAC5F /* nailart.stl */ = {isa = PBXFileReference; lastKnownFileType = file; path = nailart.stl; sourceTree = "<group>"; };
 		FF57E2F329BDFFA500E63B88 /* TemplateDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateDetail.swift; sourceTree = "<group>"; };
 		FF57E2F629BE071D00E63B88 /* TipsAndTricks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsAndTricks.swift; sourceTree = "<group>"; };
 		FF77580E29C0E4BB00B80665 /* nail_polisher.stl */ = {isa = PBXFileReference; lastKnownFileType = file; path = nail_polisher.stl; sourceTree = "<group>"; };
-		FF77581229C0F60C00B80665 /* cube.stl */ = {isa = PBXFileReference; lastKnownFileType = file; path = cube.stl; sourceTree = "<group>"; };
 		FF9CDE5E29BDE89C000ADB20 /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
 		FF9CDE6029BDF0CC000ADB20 /* TemplatesTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplatesTab.swift; sourceTree = "<group>"; };
 		FF9CDE6229BDF0D9000ADB20 /* TipsTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsTab.swift; sourceTree = "<group>"; };
@@ -56,14 +58,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FF57E2F529BE06F800E63B88 /* Tabs */ = {
+		FF0EDCFB29C38EBB007DAC5F /* Template */ = {
 			isa = PBXGroup;
 			children = (
 				FF9CDE6029BDF0CC000ADB20 /* TemplatesTab.swift */,
-				FF9CDE6229BDF0D9000ADB20 /* TipsTab.swift */,
 				FF57E2F329BDFFA500E63B88 /* TemplateDetail.swift */,
 				FFC84DF329C24298000F6B34 /* CustomizePage.swift */,
+			);
+			path = Template;
+			sourceTree = "<group>";
+		};
+		FF0EDCFC29C38ECD007DAC5F /* UtilViews */ = {
+			isa = PBXGroup;
+			children = (
 				FFC84DF529C24380000F6B34 /* CameraView.swift */,
+			);
+			path = UtilViews;
+			sourceTree = "<group>";
+		};
+		FF57E2F529BE06F800E63B88 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				FF0EDCFB29C38EBB007DAC5F /* Template */,
+				FF9CDE6229BDF0D9000ADB20 /* TipsTab.swift */,
 			);
 			path = Tabs;
 			sourceTree = "<group>";
@@ -93,7 +110,7 @@
 				FFC84DF929C26B8D000F6B34 /* Utils.swift */,
 				FFB93A4629BDDD3D002E9397 /* Assets.xcassets */,
 				FF77580E29C0E4BB00B80665 /* nail_polisher.stl */,
-				FF77581229C0F60C00B80665 /* cube.stl */,
+				FF0EDCFD29C398E8007DAC5F /* nailart.stl */,
 				FFB93A4829BDDD3D002E9397 /* Preview Content */,
 			);
 			path = Nailprint;
@@ -114,6 +131,7 @@
 				FFB93A5229BDDE1C002E9397 /* Onboarding.swift */,
 				FF9CDE5E29BDE89C000ADB20 /* TabsView.swift */,
 				FF57E2F529BE06F800E63B88 /* Tabs */,
+				FF0EDCFC29C38ECD007DAC5F /* UtilViews */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -123,6 +141,7 @@
 			children = (
 				FF9CDE6429BDF538000ADB20 /* Templates.swift */,
 				FF57E2F629BE071D00E63B88 /* TipsAndTricks.swift */,
+				FF0EDCF929C3458B007DAC5F /* ServiceResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -185,10 +204,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF77581329C0F60C00B80665 /* cube.stl in Resources */,
 				FFB93A4A29BDDD3D002E9397 /* Preview Assets.xcassets in Resources */,
 				FFB93A4729BDDD3D002E9397 /* Assets.xcassets in Resources */,
 				FF77580F29C0E4BC00B80665 /* nail_polisher.stl in Resources */,
+				FF0EDCFE29C398E9007DAC5F /* nailart.stl in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +226,7 @@
 				FF9CDE5F29BDE89C000ADB20 /* TabsView.swift in Sources */,
 				FF57E2F429BDFFA500E63B88 /* TemplateDetail.swift in Sources */,
 				FFC84DF629C24380000F6B34 /* CameraView.swift in Sources */,
+				FF0EDCFA29C3458B007DAC5F /* ServiceResponse.swift in Sources */,
 				FF57E2F729BE071D00E63B88 /* TipsAndTricks.swift in Sources */,
 				FFC84DF429C24298000F6B34 /* CustomizePage.swift in Sources */,
 				FFB93A4329BDDD3C002E9397 /* NailprintApp.swift in Sources */,
@@ -337,12 +357,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"Nailprint/Preview Content\"";
 				DEVELOPMENT_TEAM = QJPF9VAGLS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "We'll use camera to customize templates for you.";
+				INFOPLIST_KEY_NSDownloadsFolderUsageDescription = "We will save customized template files to your Downloads folder.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -353,7 +374,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.2;
+				MARKETING_VERSION = 0.3.1;
 				PRODUCT_BUNDLE_IDENTIFIER = me.mesut.Nailprint;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -371,12 +392,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"Nailprint/Preview Content\"";
 				DEVELOPMENT_TEAM = QJPF9VAGLS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "We'll use camera to customize templates for you.";
+				INFOPLIST_KEY_NSDownloadsFolderUsageDescription = "We will save customized template files to your Downloads folder.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -387,7 +409,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.2;
+				MARKETING_VERSION = 0.3.1;
 				PRODUCT_BUNDLE_IDENTIFIER = me.mesut.Nailprint;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

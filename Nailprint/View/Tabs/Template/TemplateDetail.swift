@@ -9,33 +9,30 @@ import SwiftUI
 import SceneKit
 
 struct TemplateDetail: View {
-    var id : Int = 0
-    var template : Template? = nil
     @State var readyToAdd = false
     @State var getModelPhase = 1
     @State var showExportDialog = false
     @State var showPopupAddAlert = false
     @State var color = Color(.white)
     
+    var id : Int = 0
+    var template : Template? = nil
+    var stlFile = "nail_polisher"
     var scene = SCNScene(named: "nail_polisher.stl")
     var material = SCNMaterial()
-    
     var cameraNode: SCNNode? {
         scene?.rootNode.childNode(withName: "camera", recursively: false)
     }
-    
-//    var cameraNode = SCNNode()
-    
+    var bundleItem = Bundle.main.url(forResource: "nail_polisher", withExtension: "stl")!
+        
     init(id: Int) {
         self.id = id
         self.template = Templates[id]
-        self.scene = SCNScene(named: self.template!.stlFile)
+        self.stlFile = Templates[id].stlFile
+        self.scene = SCNScene(named: self.stlFile + ".stl")
+        self.bundleItem = Bundle.main.url(forResource: self.stlFile, withExtension: "stl")!
         material.diffuse.contents = UIColor(.blue)
         scene?.rootNode.childNodes[0].geometry?.firstMaterial = material
-//        cameraNode.camera = SCNCamera()
-//        cameraNode.position = SCNVector3(0, 50, 50)
-//        cameraNode.scale = SCNVector3(2,2,2)
-//        scene?.rootNode.addChildNode(cameraNode)
     }
     
     var body: some View {
@@ -57,11 +54,11 @@ struct TemplateDetail: View {
                 .padding(.top, -60)
             
             Text(template!.name).font(.title)
-            Text(template!.description)
+            Text(template!.description).padding(.all)
             
             if (template!.customizable){
                 Text("How to Customize?").font(.title2).padding(.all)
-                Text(template!.customizationDescription).padding(.bottom)
+                Text(template!.customizationDescription).padding(.all)
             }
             
             HStack{
@@ -105,8 +102,7 @@ struct TemplateDetail: View {
                 
                 Text("or")
                 
-                ShareLink(item: Bundle.main.url(forResource: "cube", withExtension: ".stl")!,
-                          label: {
+                ShareLink(item: bundleItem, label: {
                     Label("I'll print my template", systemImage: "square.and.arrow.up").padding(.all)
                 })
                 .buttonStyle(.borderedProminent)
